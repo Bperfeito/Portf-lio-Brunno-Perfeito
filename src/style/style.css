@@ -496,6 +496,10 @@ footer p{
   button {
     width: 60%;
   }
+
+  .skills h2{
+    margin-top: 300px;
+  }
   
   .card-projects{
     width: 90%;
