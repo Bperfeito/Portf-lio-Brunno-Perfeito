@@ -442,7 +442,7 @@ footer p{
   }
 
   .skills h2{
-    padding-top: 250px;
+    padding-top: 80px;
   }
 
   .card-projects{
@@ -478,7 +478,7 @@ footer p{
   }
 
   .about{
-    padding-bottom: 90px;
+    padding-bottom: 40px;
   }
 
   .sobre-texto h3 {
@@ -498,15 +498,20 @@ footer p{
   }
 
   .skills h2{
-    margin-top: 300px;
+    padding-top: 50px;
+    margin-top: 50px;
   }
   
+h1, h2, h3{
+  text-align: center;
+}
+
   .card-projects{
     width: 90%;
   }
 
   #title-contact{
-    padding-top: 150px;
+    padding-top: 50px;
   }
 
 }
