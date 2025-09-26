@@ -378,13 +378,24 @@ footer p{
   .sobre-img {
     position: relative; /* tira o absolute */
     margin: 20px auto 0;
-    margin-left: 50px;
+    z-index: 1;
   }
 
   .skills {
     width: 100%;
     display: table-row;
     max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .skills h2{
+    padding-top: 60px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
   }
 
 }
@@ -415,11 +426,11 @@ footer p{
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .sobre-mim {
@@ -433,16 +444,25 @@ footer p{
 
   .sobre-img img {
     margin: 20px auto 0;
+    position: relative;
+    z-index: 1;
   }
 
   .skills {
     width: 100%;
     display: table-row;
     max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
   .skills h2{
-    padding-top: 80px;
+    padding-top: 50px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
   }
 
   .card-projects{
@@ -463,14 +483,14 @@ footer p{
 
   .logo {
     font-size: 1.5rem;
-    margin-right: 30px;
+    margin-right: 0px;
   }
 
  nav {
     flex-direction: column;
     align-items: center;
-    margin-left: 5px;
-    gap: 15px;
+    margin-left: 0px;
+    gap: 10px;
   }
 
   nav a {
@@ -482,12 +502,15 @@ footer p{
   }
 
   .sobre-texto h3 {
-    font-size: 18px;
+    font-size: 10px;
+  }
+
+  .sobre-img{
+    margin: 0 auto 30px;
+    position: relative;
+    z-index: 1;
   }
   
-.sobre-img{
-   margin: 0;
-  }
 
   p {
     font-size: 14px;
@@ -497,9 +520,20 @@ footer p{
     width: 60%;
   }
 
+  .skills{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+  }
+
   .skills h2{
-    padding-top: 50px;
-    margin-top: 50px;
+    padding-top: 40px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
   }
   
 h1, h2, h3{
@@ -511,8 +545,37 @@ h1, h2, h3{
   }
 
   #title-contact{
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
 }
 
+@media (max-width: 400px) {
+
+  .sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sobre-img img{
+    width: 80%;
+    max-width: 250px;
+    margin: 0 auto 20px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .skills{
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .skills h2{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
