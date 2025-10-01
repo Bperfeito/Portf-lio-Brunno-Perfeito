@@ -386,6 +386,7 @@ footer p{
   text-align: center;
 }
 
+/* h2 ira descer sem ficar em cima da foto */
 #habilidades h2{
   display: block;
   position: relative;
